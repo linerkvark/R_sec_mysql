@@ -5,7 +5,7 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.33.3/promethe
 mkdir /etc/prometheus
 mkdir /var/lib/prometheus
 tar -xvf prometheus-2.33.3.linux-amd64.tar.gz
-cd prometheus-2.33.3.linux-amd64.tar.gz
+cd prometheus-2.33.3.linux-amd64
 cp prometheus promtool /usr/local/bin/
 cp -r console_libraries consoles prometheus.yml /etc/prometheus
 useradd --no-create-home --shell /bin/false prometheus
